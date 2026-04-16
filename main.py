@@ -1,3 +1,6 @@
+@dp.message()
+async def echo_handler(message: types.Message):
+    await message.answer("Men ishlayapman! Siz yozdingiz: " + message.text)
 import os
 import asyncio
 from aiogram import Bot, Dispatcher, types
